@@ -1,0 +1,3 @@
+<launch>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find remote_control)/rviz/navigation.rviz" required="true"/>
+</launch>
