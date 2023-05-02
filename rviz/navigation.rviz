@@ -63,7 +63,7 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 2.25
+        Max Value: 1.649999976158142
         Min Value: -0.15000000596046448
         Value: true
       Axis: Z
@@ -82,7 +82,7 @@ Visualization Manager:
       Selectable: true
       Size (Pixels): 3
       Size (m): 0.10000000149011612
-      Style: Flat Squares
+      Style: Boxes
       Topic: /occupancy_map/inflated_voxel_map
       Unreliable: false
       Use Fixed Frame: true
@@ -189,7 +189,7 @@ Visualization Manager:
       Marker Topic: /bspline_traj/input_trajectory_point
       Name: Input Traj Pts
       Namespaces:
-        input_trajectory_point: true
+        {}
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -229,7 +229,7 @@ Visualization Manager:
       Marker Topic: /bspline_traj/control_points
       Name: Control Points
       Namespaces:
-        control_points: true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/Marker
@@ -324,9 +324,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.0947970151901245
+      Pitch: 0.9597971439361572
       Target Frame: <Fixed Frame>
-      Yaw: 2.0016815662384033
+      Yaw: 1.976680874824524
     Saved: ~
 Window Geometry:
   Displays:
