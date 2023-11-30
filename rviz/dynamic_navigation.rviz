@@ -189,7 +189,7 @@ Visualization Manager:
       Marker Topic: /bspline_traj/input_trajectory_point
       Name: Input Traj Pts
       Namespaces:
-        input_trajectory_point: true
+        {}
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -285,7 +285,7 @@ Visualization Manager:
       Marker Topic: /bspline_traj/astar_path
       Name: AstarPath
       Namespaces:
-        astar_path: true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -297,13 +297,13 @@ Visualization Manager:
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
-      Enabled: true
+      Enabled: false
       Marker Topic: /dynamic_detector/dynamic_bboxes
-      Name: MarkerArray
+      Name: detected obstacles
       Namespaces:
-        box3D: true
+        {}
       Queue Size: 100
-      Value: true
+      Value: false
   Enabled: true
   Global Options:
     Background Color: 211; 215; 207
@@ -340,17 +340,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 3.483478546142578
-        Y: 0.04290385916829109
-        Z: 1.8705037832260132
+        X: 2.2954533100128174
+        Y: -0.16793353855609894
+        Z: 1.6589624881744385
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.5647963285446167
+      Pitch: 1.2297972440719604
       Target Frame: <Fixed Frame>
-      Yaw: 0.006670476868748665
+      Yaw: 4.489858627319336
     Saved: ~
 Window Geometry:
   Displays:
@@ -369,4 +369,4 @@ Window Geometry:
     collapsed: false
   Width: 1244
   X: 1316
-  Y: 27
+  Y: 0
