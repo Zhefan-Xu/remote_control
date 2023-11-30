@@ -5,6 +5,7 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
+        - /Obstacle Boxes1
       Splitter Ratio: 0.5
     Tree Height: 1079
   - Class: rviz/Selection
@@ -62,7 +63,7 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 1.4500000476837158
+        Max Value: 1.5499999523162842
         Min Value: -0.15000000596046448
         Value: true
       Axis: Z
@@ -89,7 +90,7 @@ Visualization Manager:
       Value: true
     - Class: rviz/MarkerArray
       Enabled: true
-      Marker Topic: /dynamic_map/box_visualization_marker
+      Marker Topic: /dynamic_detector/dynamic_bboxes
       Name: Obstacle Boxes
       Namespaces:
         {}
@@ -292,7 +293,7 @@ Visualization Manager:
       Marker Topic: /tracking_controller/vel_and_acc_info
       Name: controller_vel
       Namespaces:
-        {}
+        tracking_controller: true
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -308,10 +309,7 @@ Visualization Manager:
       Marker Topic: /dep/roadmap
       Name: roadmap
       Namespaces:
-        edge: true
-        goal_candidate: true
-        num_voxel_text: true
-        prm_point: true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -327,8 +325,7 @@ Visualization Manager:
       Marker Topic: /dep/best_paths
       Name: best path
       Namespaces:
-        best_path: true
-        best_path_node: true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -336,13 +333,31 @@ Visualization Manager:
       Marker Topic: /dep/frontier_regions
       Name: frontier regions
       Namespaces:
-        frontier range: true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
       Enabled: true
       Marker Topic: /dynamic_detector/dynamic_bboxes
       Name: dynamic obstacles
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: true
+    - Alpha: 0.699999988079071
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: false
+      Name: Map
+      Topic: /dynamic_map/2D_occupancy_map
+      Unreliable: false
+      Use Timestamp: false
+      Value: false
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /onboard_vision/obstacle_bbox
+      Name: MarkerArray
       Namespaces:
         {}
       Queue Size: 100
@@ -375,7 +390,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 24.867876052856445
+      Distance: 21.02100944519043
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -383,17 +398,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 2.3762776851654053
-        Y: 2.0547397136688232
-        Z: 7.639639377593994
+        X: 0.48293036222457886
+        Y: -0.7814839482307434
+        Z: 6.294680118560791
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.5697963237762451
+      Pitch: 0.5047973394393921
       Target Frame: <Fixed Frame>
-      Yaw: 3.1366963386535645
+      Yaw: 2.0816855430603027
     Saved: ~
 Window Geometry:
   Displays:
