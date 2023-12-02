@@ -63,8 +63,8 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 1.5499999523162842
-        Min Value: -0.15000000596046448
+        Max Value: 2.450000047683716
+        Min Value: -0.05000000074505806
         Value: true
       Axis: Z
       Channel Name: intensity
@@ -93,7 +93,7 @@ Visualization Manager:
       Marker Topic: /dynamic_detector/dynamic_bboxes
       Name: Obstacle Boxes
       Namespaces:
-        {}
+        box3D: true
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -309,7 +309,10 @@ Visualization Manager:
       Marker Topic: /dep/roadmap
       Name: roadmap
       Namespaces:
-        {}
+        edge: true
+        goal_candidate: true
+        num_voxel_text: true
+        prm_point: true
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -325,7 +328,8 @@ Visualization Manager:
       Marker Topic: /dep/best_paths
       Name: best path
       Namespaces:
-        {}
+        best_path: true
+        best_path_node: true
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -333,7 +337,7 @@ Visualization Manager:
       Marker Topic: /dep/frontier_regions
       Name: frontier regions
       Namespaces:
-        {}
+        frontier range: true
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -341,7 +345,7 @@ Visualization Manager:
       Marker Topic: /dynamic_detector/dynamic_bboxes
       Name: dynamic obstacles
       Namespaces:
-        {}
+        box3D: true
       Queue Size: 100
       Value: true
     - Alpha: 0.699999988079071
@@ -349,7 +353,7 @@ Visualization Manager:
       Color Scheme: map
       Draw Behind: false
       Enabled: false
-      Name: Map
+      Name: 2D Map
       Topic: /dynamic_map/2D_occupancy_map
       Unreliable: false
       Use Timestamp: false
@@ -357,9 +361,20 @@ Visualization Manager:
     - Class: rviz/MarkerArray
       Enabled: true
       Marker Topic: /onboard_vision/obstacle_bbox
-      Name: MarkerArray
+      Name: GT obstacle
       Namespaces:
-        {}
+        person10_0.5_0.5_1.8: true
+        person11_0.5_0.5_1.8: true
+        person12_0.5_0.5_1.8: true
+        person1_0.5_0.5_1.8: true
+        person2_0.5_0.5_1.8: true
+        person3_0.5_0.5_1.8: true
+        person4_0.5_0.5_1.8: true
+        person5_0.5_0.5_1.8: true
+        person6_0.5_0.5_1.8: true
+        person7_0.5_0.5_1.8: true
+        person8_0.5_0.5_1.8: true
+        person9_0.5_0.5_1.8: true
       Queue Size: 100
       Value: true
   Enabled: true
@@ -390,7 +405,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 21.02100944519043
+      Distance: 29.533004760742188
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -398,17 +413,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 0.48293036222457886
-        Y: -0.7814839482307434
-        Z: 6.294680118560791
+        X: 2.9934146404266357
+        Y: -1.5607188940048218
+        Z: 6.297199726104736
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.5047973394393921
+      Pitch: 1.5697963237762451
       Target Frame: <Fixed Frame>
-      Yaw: 2.0816855430603027
+      Yaw: 3.136690378189087
     Saved: ~
 Window Geometry:
   Displays:
