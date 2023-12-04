@@ -62,7 +62,7 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 1.9500000476837158
+        Max Value: 2.049999952316284
         Min Value: -0.05000000074505806
         Value: true
       Axis: Z
@@ -89,10 +89,10 @@ Visualization Manager:
       Value: true
     - Class: rviz/MarkerArray
       Enabled: true
-      Marker Topic: /dynamic_detector/dynamic_bboxes
+      Marker Topic: /onboard_detector/dynamic_bboxes
       Name: Obstacle Boxes
       Namespaces:
-        {}
+        box3D: true
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -289,10 +289,10 @@ Visualization Manager:
       Value: true
     - Class: rviz/MarkerArray
       Enabled: true
-      Marker Topic: /onboard_vision/obstacle_bbox
+      Marker Topic: /onboard_detector/GT_obstacle_bbox
       Name: GT Obstacles
       Namespaces:
-        person1_0.5_0.5_1.8: true
+        GT osbtacles0: true
       Queue Size: 100
       Value: true
   Enabled: true

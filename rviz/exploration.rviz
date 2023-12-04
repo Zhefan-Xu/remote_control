@@ -5,7 +5,6 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
-        - /Obstacle Boxes1
       Splitter Ratio: 0.5
     Tree Height: 1079
   - Class: rviz/Selection
@@ -90,10 +89,10 @@ Visualization Manager:
       Value: true
     - Class: rviz/MarkerArray
       Enabled: true
-      Marker Topic: /dynamic_detector/dynamic_bboxes
+      Marker Topic: /onboard_detector/dynamic_bboxes
       Name: Obstacle Boxes
       Namespaces:
-        box3D: true
+        {}
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -337,7 +336,7 @@ Visualization Manager:
       Marker Topic: /dep/frontier_regions
       Name: frontier regions
       Namespaces:
-        frontier range: true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -345,7 +344,7 @@ Visualization Manager:
       Marker Topic: /dynamic_detector/dynamic_bboxes
       Name: dynamic obstacles
       Namespaces:
-        box3D: true
+        {}
       Queue Size: 100
       Value: true
     - Alpha: 0.699999988079071
@@ -360,21 +359,21 @@ Visualization Manager:
       Value: false
     - Class: rviz/MarkerArray
       Enabled: true
-      Marker Topic: /onboard_vision/obstacle_bbox
+      Marker Topic: /onboard_detector/GT_obstacle_bbox
       Name: GT obstacle
       Namespaces:
-        person10_0.5_0.5_1.8: true
-        person11_0.5_0.5_1.8: true
-        person12_0.5_0.5_1.8: true
-        person1_0.5_0.5_1.8: true
-        person2_0.5_0.5_1.8: true
-        person3_0.5_0.5_1.8: true
-        person4_0.5_0.5_1.8: true
-        person5_0.5_0.5_1.8: true
-        person6_0.5_0.5_1.8: true
-        person7_0.5_0.5_1.8: true
-        person8_0.5_0.5_1.8: true
-        person9_0.5_0.5_1.8: true
+        GT osbtacles0: true
+        GT osbtacles1: true
+        GT osbtacles10: true
+        GT osbtacles11: true
+        GT osbtacles2: true
+        GT osbtacles3: true
+        GT osbtacles4: true
+        GT osbtacles5: true
+        GT osbtacles6: true
+        GT osbtacles7: true
+        GT osbtacles8: true
+        GT osbtacles9: true
       Queue Size: 100
       Value: true
   Enabled: true
