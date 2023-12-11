@@ -24,7 +24,7 @@ Panels:
   - Class: rviz/Time
     Name: Time
     SyncMode: 0
-    SyncSource: Dynamic Map
+    SyncSource: ""
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -92,7 +92,7 @@ Visualization Manager:
       Marker Topic: /onboard_detector/dynamic_bboxes
       Name: Obstacle Boxes
       Namespaces:
-        box3D: true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -292,9 +292,30 @@ Visualization Manager:
       Marker Topic: /onboard_detector/GT_obstacle_bbox
       Name: GT Obstacles
       Namespaces:
-        GT osbtacles0: true
+        {}
       Queue Size: 100
       Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Name: RobotModel
+      Robot Description: robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
   Enabled: true
   Global Options:
     Background Color: 211; 215; 207
@@ -331,17 +352,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 12.884443283081055
-        Y: 2.491190195083618
-        Z: -10.63642406463623
+        X: 10.416940689086914
+        Y: -0.5809353590011597
+        Z: -10.639047622680664
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.1697968244552612
+      Pitch: 1.5697963237762451
       Target Frame: <Fixed Frame>
-      Yaw: 3.356698513031006
+      Yaw: 3.136697769165039
     Saved: ~
 Window Geometry:
   Displays:

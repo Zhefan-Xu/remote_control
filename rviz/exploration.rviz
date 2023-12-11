@@ -24,7 +24,7 @@ Panels:
   - Class: rviz/Time
     Name: Time
     SyncMode: 0
-    SyncSource: Dynamic Map
+    SyncSource: ""
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -292,7 +292,7 @@ Visualization Manager:
       Marker Topic: /tracking_controller/vel_and_acc_info
       Name: controller_vel
       Namespaces:
-        tracking_controller: true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -308,10 +308,7 @@ Visualization Manager:
       Marker Topic: /dep/roadmap
       Name: roadmap
       Namespaces:
-        edge: true
-        goal_candidate: true
-        num_voxel_text: true
-        prm_point: true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -327,8 +324,7 @@ Visualization Manager:
       Marker Topic: /dep/best_paths
       Name: best path
       Namespaces:
-        best_path: true
-        best_path_node: true
+        {}
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -362,20 +358,30 @@ Visualization Manager:
       Marker Topic: /onboard_detector/GT_obstacle_bbox
       Name: GT obstacle
       Namespaces:
-        GT osbtacles0: true
-        GT osbtacles1: true
-        GT osbtacles10: true
-        GT osbtacles11: true
-        GT osbtacles2: true
-        GT osbtacles3: true
-        GT osbtacles4: true
-        GT osbtacles5: true
-        GT osbtacles6: true
-        GT osbtacles7: true
-        GT osbtacles8: true
-        GT osbtacles9: true
+        {}
       Queue Size: 100
       Value: true
+    - Alpha: 1
+      Class: rviz/RobotModel
+      Collision Enabled: false
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+      Name: RobotModel
+      Robot Description: robot_description
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
   Enabled: true
   Global Options:
     Background Color: 211; 215; 207
