@@ -25,7 +25,7 @@ Panels:
   - Class: rviz/Time
     Name: Time
     SyncMode: 0
-    SyncSource: ""
+    SyncSource: Occupancy Map
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -185,13 +185,13 @@ Visualization Manager:
       Unreliable: false
       Value: true
     - Class: rviz/MarkerArray
-      Enabled: true
+      Enabled: false
       Marker Topic: /bspline_traj/input_trajectory_point
       Name: Input Traj Pts
       Namespaces:
         {}
       Queue Size: 100
-      Value: true
+      Value: false
     - Alpha: 1
       Axes Length: 0.30000001192092896
       Axes Radius: 0.10000000149011612
@@ -237,7 +237,7 @@ Visualization Manager:
       Marker Topic: /tracking_controller/vel_and_acc_info
       Name: Controller Info
       Namespaces:
-        {}
+        tracking_controller: true
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -285,7 +285,7 @@ Visualization Manager:
       Marker Topic: /bspline_traj/astar_path
       Name: AstarPath
       Namespaces:
-        {}
+        astar_path: true
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -293,7 +293,15 @@ Visualization Manager:
       Marker Topic: /onboard_detector/GT_obstacle_bbox
       Name: GT Obstacles
       Namespaces:
-        {}
+        GT osbtacles0: true
+        GT osbtacles1: true
+        GT osbtacles2: true
+        GT osbtacles3: true
+        GT osbtacles4: true
+        GT osbtacles5: true
+        GT osbtacles6: true
+        GT osbtacles7: true
+        GT osbtacles8: true
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -301,7 +309,7 @@ Visualization Manager:
       Marker Topic: /onboard_detector/dynamic_bboxes
       Name: detected obstacles
       Namespaces:
-        {}
+        box3D: true
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -314,11 +322,6 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -369,9 +372,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.2747976779937744
+      Pitch: 1.5697963237762451
       Target Frame: <Fixed Frame>
-      Yaw: 3.1098556518554688
+      Yaw: 3.094855308532715
     Saved: ~
 Window Geometry:
   Displays:
