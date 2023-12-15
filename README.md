@@ -11,6 +11,7 @@ There are four rviz launch configuration files for visualization convenience:
 - **Exploration**: ```roslaunch remote_control exploration.launch```
 
 The following screenshot shows the example rviz visulization of **Exploration**:
+![Screenshot from 2023-12-14 21-31-50](https://github.com/Zhefan-Xu/remote_control/assets/55560905/3dfd5516-e50b-4185-b502-1bfad6b36ae3)
 
 
 ## II. Command Scripts:
