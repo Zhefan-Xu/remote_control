@@ -15,3 +15,4 @@ The following screenshot shows the example rviz visulization of **Exploration**:
 
 
 ## II. Command Scripts:
+There are also some useful bash commands that will be potentially used when operating the robot under the directory ```remote_control/scripts```.
