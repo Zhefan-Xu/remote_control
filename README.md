@@ -5,6 +5,7 @@ This package contains Rviz configuration and launch files for easy visualization
 
 ## I. Rviz Example:
 There are four rviz launch configuration files for visualization convenience:
+- **Tracking Circle**: ```roslaunch remote_control track_circle.launch```
 - **Navigation**: ```roslaunch remote_control navigation.launch```
 - **Dynamic Navigation**: ```roslaunch remote_control dynamic_navigation.launch```
 - **Inspection**: ```roslaunch remote_control inspection.launch```
