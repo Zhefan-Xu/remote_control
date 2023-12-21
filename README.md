@@ -3,7 +3,7 @@ This package contains Rviz configuration and launch files for easy visualization
 
 **Author**: [Zhefan Xu](https://zhefanxu.com/), Computational Engineering & Robotics Lab (CERLAB) at Carnegie Mellon University (CMU).
 
-## I. Rviz Example:
+## I. Rviz Example
 There are four rviz launch configuration files for visualization convenience:
 - **Tracking Circle**: ```roslaunch remote_control track_circle.launch```
 - **Navigation**: ```roslaunch remote_control navigation.launch```
@@ -16,5 +16,5 @@ The following screenshot shows the example rviz visulization of **Exploration**:
 ![Screenshot from 2023-12-14 21-31-50](https://github.com/Zhefan-Xu/remote_control/assets/55560905/3dfd5516-e50b-4185-b502-1bfad6b36ae3)
 
 
-## II. Command Scripts:
+## II. Command Scripts
 There are also some useful bash commands that will be potentially used when operating the robot under the directory ```remote_control/scripts```.
