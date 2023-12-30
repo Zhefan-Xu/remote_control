@@ -24,7 +24,7 @@ Panels:
   - Class: rviz/Time
     Name: Time
     SyncMode: 0
-    SyncSource: ""
+    SyncSource: Dynamic Map
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -62,7 +62,7 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 2.049999952316284
+        Max Value: 2.450000047683716
         Min Value: -0.05000000074505806
         Value: true
       Axis: Z
@@ -92,7 +92,7 @@ Visualization Manager:
       Marker Topic: /onboard_detector/dynamic_bboxes
       Name: Obstacle Boxes
       Namespaces:
-        {}
+        box3D: true
       Queue Size: 100
       Value: true
     - Class: rviz/MarkerArray
@@ -240,18 +240,18 @@ Visualization Manager:
       Unreliable: false
       Value: true
     - Alpha: 1
-      Axes Length: 1
+      Axes Length: 0.30000001192092896
       Axes Radius: 0.10000000149011612
       Class: rviz/Pose
       Color: 255; 25; 0
       Enabled: true
       Head Length: 0.30000001192092896
-      Head Radius: 0.10000000149011612
+      Head Radius: 0.30000001192092896
       Name: Setpoint
       Queue Size: 10
-      Shaft Length: 1
-      Shaft Radius: 0.05000000074505806
-      Shape: Axes
+      Shaft Length: 0.30000001192092896
+      Shaft Radius: 0.10000000149011612
+      Shape: Arrow
       Topic: /tracking_controller/target_pose
       Unreliable: false
       Value: true
@@ -292,7 +292,7 @@ Visualization Manager:
       Marker Topic: /onboard_detector/GT_obstacle_bbox
       Name: GT Obstacles
       Namespaces:
-        {}
+        GT osbtacles0: true
       Queue Size: 100
       Value: true
     - Alpha: 1
@@ -305,11 +305,6 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
       Name: RobotModel
       Robot Description: robot_description
       TF Prefix: ""
@@ -344,7 +339,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 45.151180267333984
+      Distance: 47.03169250488281
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -352,9 +347,9 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 10.416940689086914
-        Y: -0.5809353590011597
-        Z: -10.639047622680664
+        X: 6.538397789001465
+        Y: -1.1365026235580444
+        Z: -11.242362022399902
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
@@ -362,7 +357,7 @@ Visualization Manager:
       Near Clip Distance: 0.009999999776482582
       Pitch: 1.5697963237762451
       Target Frame: <Fixed Frame>
-      Yaw: 3.136697769165039
+      Yaw: 3.1416983604431152
     Saved: ~
 Window Geometry:
   Displays:
