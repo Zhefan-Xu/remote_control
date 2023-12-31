@@ -3,6 +3,10 @@ This package contains Rviz configuration and launch files for easy visualization
 
 **Author**: [Zhefan Xu](https://zhefanxu.com/), Computational Engineering & Robotics Lab (CERLAB) at Carnegie Mellon University (CMU).
 
+If you find this work helpful, kindly show your support by giving us a free ⭐️. Your recognition is truly valued.
+
+This repo can be used as a standalone package and also comes as a module of our [autonomy framework](https://github.com/Zhefan-Xu/CERLAB-UAV-Autonomy).
+
 ## I. Rviz Example
 There are four rviz launch configuration files for visualization convenience:
 - **Tracking Circle**: ```roslaunch remote_control track_circle.launch```
